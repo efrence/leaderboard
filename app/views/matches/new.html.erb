@@ -1,0 +1,15 @@
+<h1 class='page-header'>Log Game</h1>
+
+<%#<div class="alert alert-warning" role="alert">This is a sample page. Replace link in the header with your own.</div>%>
+
+<%= simple_form_for(@match, :html => { :class => 'form-horizontal' }) do |f| %>
+  <div class="form-group">
+      <%= f.input :date_played, as: :date, order: [:month,:day,:year] %>
+      <%= f.association :player2, label_method: :email, value_method: :id, prompt: "Select your oponent", required: true %>
+      <%= f.input :player1_score, required: true %>
+      <%= f.input :player2_score, required: true %>
+      <%= f.button :submit,'Save' %>
+      <%= link_to "Cancel", :back %>
+      </div>
+  <% end %>
+

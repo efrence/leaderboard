@@ -20,4 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  simple_form:
+    labels:
+      user:
+        username: 'User name'
+        password: 'Password'
+      match:
+        player1_score: 'Your score'
+        player2_score: 'Their score'
+        player2_id: 'Oponent'
+        player2: 'Oponent'
+

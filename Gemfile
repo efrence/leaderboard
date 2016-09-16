@@ -10,10 +10,13 @@ gem 'turbolinks',   '~> 2.5.3'
 
 gem 'devise',       '~> 3.5.2'
 gem 'devise-bootstrap-views', '~> 0.0.6'
+gem 'simple_form'
 
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'awesome_print'
+  gem "binding_of_caller"
+  gem "better_errors"
 end
